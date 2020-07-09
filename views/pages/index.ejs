@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+  <h2><%= typeof myTitle === 'string' ? myTitle : '' %></h2>
+
+  <ul>
+    <% typeof users === 'object' && users.forEach(function(user) { %>
+        <li><%= user %></li>
+    <% }); %>
+</ul>
+</body>
+</html>
